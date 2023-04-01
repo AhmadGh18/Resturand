@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></script>
+    <link rel="stylesheet" href="../css/reservayion.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-bars"></i>
+      <a class="topleft">
+        <img src="../additinalimage/Loomis-Gastropub-nobg-768x768.png" alt="" />
+        <p><span>g</span>astro<span>P</span>ub</p>
+      </a>
+      <div class="middel totoggle">
+        <ul>
+          <li><a class="special" href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">Aboutus</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                servsecs
+                <i class="fa fa-caret-down sd"></i>
+                <i class="fa fa-caret-up su"></i>
+              </button>
+              <div class="dropdown-content">
+                <a class="notin" href="foodsection.html">Fast food</a>
+
+                <a class="notin" href="foodsection.html">salads</a>
+                <a class="notin" href="foodsection.html">drinks</a>
+                <a class="notin" href="foodsection.html">Pasta</a>
+                <p>....</p>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contactus.html">contactus</a></li>
+        </ul>
+      </div>
+
+      <div class="righttop">
+        <ul>
+          <li><button>Reservation</button></li>
+          <li>
+            <i
+              class="fa-brands fa-facebook"
+              style="color: #fdfcfc; font-size: 20px"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fa-brands fa-instagram"
+              style="color: #ffffff; font-size: 20px"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fa-brands fa-twitter"
+              style="color: #ffffff; font-size: 20px"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="cotnt">
+      <form method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="visitor_name"
+            placeholder="Ahmad ghzayel"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="visitor_email"
+            placeholder="yourname@email.com"
+            required
+          />
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="visitor_phone"
+            placeholder="498-348-3872"
+            pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+            required
+          />
+        </div>
+        <hr />
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input
+            type="number"
+            id="adult"
+            name="total_adults"
+            placeholder="2"
+            min="1"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input
+            type="number"
+            id="child"
+            name="total_children"
+            placeholder="2"
+            min="0"
+            required
+          />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required />
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required />
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select table prefarable</label>
+          <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a Room from the List</option>
+            <option value="big">big</option>
+            <option value="isolated">isloated</option>
+          </select>
+        </div>
+        <hr />
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea
+            id="message"
+            name="visitor_message"
+            placeholder="Tell us anything else that might be important."
+            required
+          ></textarea>
+        </div>
+        <button class="bubu" type="submit">Book a table</button>
+      </form>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
